@@ -16,6 +16,7 @@
     </properties>
 
     <modules>
+        <module>i7js-book</module>
         <module>i7js-examples</module>
         <module>i7js-highlevel</module>
         <module>i7js-jumpstart</module>
