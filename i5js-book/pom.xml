@@ -178,6 +178,21 @@
           <warSourceDirectory>WebContent</warSourceDirectory>
         </configuration>
       </plugin>
+
+      <plugin>
+        <groupId>org.eclipse.jetty</groupId>
+        <artifactId>jetty-maven-plugin</artifactId>
+        <!--
+        9.3.11.v20160721启动失败，升级到Jetty 9.4.9(或更高版本)以支持JEP-238 Jar文件。
+        异常来自lombok依赖。
+        -->
+        <version>9.4.10.v20180503</version>
+        <configuration>
+          <webApp>
+            <contextPath>/</contextPath>
+          </webApp>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
 
